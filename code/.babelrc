@@ -1,0 +1,33 @@
+{
+    "presets": [
+        "stage-0",
+        [
+            "env",
+            {
+                "targets": {
+                    "browser": [
+                        "last 2 Chrome versions",
+                        "ie >= 8",
+                        "Firefox >= 20",
+                        "iOS 7",
+                        "> 5%"
+                    ]
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        "syntax-dynamic-import",
+        "add-react-displayname",
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "style": "css"
+            }
+        ]
+    ]
+}
